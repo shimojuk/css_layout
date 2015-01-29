@@ -12,35 +12,39 @@
 	width: 100%; /* レイアウト全体の幅を指定 */
 
 }
-header {       
+#header {       
     background-color: #DDDDDD;
-    height: 150px;
+    height: 50px;
     }
 #container{
-    position:relative;
-    margin:10px 0;
+    float:left;
     width:100%;
-    }
+    margin-right:-145px
+
+}
 #primary {
-    margin:0 155px;
+    float:right;
+    width:450px;
+    margin:10px 0;
     background-color: #C7D5ED;
     
 }
 #secondary {
-	position: absolute; /* 値にabsoluteを指定*/ 
-    left:0px;
-    top:0px;
+	float:left;
     width:145px;
+    margin:10px 0px;
     background-color: #F9CFBA;
 }
-#advertisement {
-	position: absolute; /* 値にabsoluteを指定*/ 
-    right:0px;
-    top:0px;
+#advertisement {	 
+    float:right;
     width:145px;
+    margin:10px 0;
     background-color: #E5c7ED;
 }
+
+
 #footer{
+    clear:both;
     background-color:#DDDDDD;
     height:50px;
 
@@ -51,14 +55,16 @@ header {
 </head>
 <body>
     <div id="wrapper">
-        <!--<div id="header"><br /></div>-->
-        <header><br /></header>
+        <div id="header"><br /></div>
         <div id="container">
-            <div id="primary"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+            <div id="primary"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <div id="content"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+            </div>
             <div id="secondary"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
-            <div id="advertisement"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
         </div>
+        <div id="advertisement"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+        <div id="footer"><br /></div>
     </div>
-    <div id="footer"><br /></div>
+    
 </body>
 </html>
