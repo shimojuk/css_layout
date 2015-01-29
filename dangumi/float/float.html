@@ -5,9 +5,9 @@
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <title>floatでボックスの幅と位置を指定する</title>
 <style type="text/css">
-#body{
+/*#body{
     text-align:center;
-}
+}*/
 #wrapper {
 	width: 100%; /* レイアウト全体の幅を指定 */
 
@@ -17,49 +17,48 @@
     height: 50px;
     }
 #container{
-    float:left;
+    position:relative;
+    margin:10px 0;
     width:100%;
-    margin-right:-145px
-
     }
 #primary {
-    float:right;
-    width:450px;
-    margin:10px 0;
+    margin:0 155px;
     background-color: #C7D5ED;
     
 }
 #secondary {
-	float:left;
+	position: absolute; /* 値にabsoluteを指定*/ 
+    left:0px;
+    top:0px;
     width:145px;
-    margin:10px 0px;
     background-color: #F9CFBA;
 }
 #advertisement {
-    float:right;
+	position: absolute; /* 値にabsoluteを指定*/ 
+    right:0px;
+    top:0px;
     width:145px;
-    margin:10px 0;
     background-color: #E5c7ED;
 }
 #footer{
-    clear:both;
     background-color:#DDDDDD;
     height:50px;
+
+
 }
+
 </style>
 </head>
 <body>
     <div id="wrapper">
         <!--<div id="header"><br /></div>-->
-        <header><br /></header>
-        <div id="container">
-            <div id="primary"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                <div id="content"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+        <div id="header"><br /></div>
+            <div id="container">
+                <div id="primary"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+                <div id="secondary"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
+                <div id="advertisement"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
             </div>
-            <div id="secondary"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
         </div>
-            <div id="advertisement"><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
-        <div id="footer"><br /></div>
-    </div>   
+    <div id="footer"><br /></div>
 </body>
 </html>
