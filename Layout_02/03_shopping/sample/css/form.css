@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/* コンテンツ幅の変更
+---------------------------------------------*/
+#content,#footer {
+	width: 544px;
+}
+
+/* 入力フォーム
+---------------------------------------------*/
+#orderForm fieldset {
+	margin-top: 30px;
+	border: 1px solid #ccc;
+}
+#orderForm legend {
+	padding-top: 2px;
+	color: #333333;
+	font-weight: bold;
+	border-top: 2px solid #DC0101;
+}
+#orderForm dl {
+	padding: 10px 20px 20px 20px;
+}
+#orderForm dt {
+	margin-top: 10px;
+}
+#orderForm dd {
+	padding: 5px 0 10px 0;
+	border-bottom: 1px solid #CCCCCC;
+}
+#orderForm em {
+	color: #DC0101;
+	font-style: normal;
+}
+#orderForm .submit {
+	margin-top: 30px;
+	text-align: center;
+}
+#orderForm select {
+	background: #F7F7F7;
+}
+#orderForm .assist {
+	color: #666666;
+	font-size: 90%;
+}
+#orderForm .text1 {
+	width: 150px;
+}
+#orderForm .text2 {
+	width: 4em;
+}
+#orderForm .text3 {
+	width: 200px;
+}
+#orderForm .text1,#orderForm .text2,#orderForm .text3 {
+	background: #FFFFFF url(../images/input_bg.gif) left top repeat-x;
+	border: 3px double #CCCCCC;
+	padding: 2px;
+}

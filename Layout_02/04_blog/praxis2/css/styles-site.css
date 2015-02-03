@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/* スタイルを切り替えるリンク
+---------------------------------------------*/
+#styleSwitch {
+	position: absolute;
+	right: 50px;
+	top: 60px;
+	width: 200px;
+	text-align: center;
+}
+#styleSwitch h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+}
+#styleSwitch li {
+	display: inline;
+	padding-right: 2px;
+}
+
+/* 基本スタイル
+---------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	list-style: none;
+}
+body {
+	font-size: 75%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+	line-height: 1.4;
+	/*\*/
+	letter-spacing: 0.1em;
+	/**/
+	color: #333333;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+a {
+	color: #009900;
+}
+
+/* コンテンツ全体に敷く背景画像
+---------------------------------------------*/
+
+body {
+	background: #FFFFFF url(../images/body_bg.gif) left top repeat-x;
+	text-align: center;
+}
+#container {
+	position: relative;
+	width: 812px;
+	height: 239px;
+	margin: 0 auto;
+	text-align: left;
+	background: url(../images/container_bg.gif) left top no-repeat;
+}
+#banner-header {
+	position: absolute;
+	left: 40px;
+	top: 35px;
+	width: 245px;
+}
+#banner-header a {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 0 !important;
+	height /**/: 50px;
+	padding-top: 50px;
+	background: url(../images/logo.gif) left top no-repeat;
+}
+#banner-description {
+	position: absolute;
+	right: 50px;
+	top: 60px;
+	width: 460px;
+	color: #666666;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-align: right;
+	text-transform: uppercase;
+}
+#pagebody {
+	position: absolute;
+	left: 27px;
+	top: 98px;
+	width: 750px;
+}
+#alpha {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 500px;
+	padding-bottom: 20px;
+}
+#beta {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 236px;
+	padding-bottom: 20px;
+}
+
+/* エントリーのレイアウト
+---------------------------------------------*/
+.date-header {
+	position: relative;
+	top: 65px;
+	z-index: 2;
+	margin-left: 45px;
+	color: #009900;
+	font-size: 90%;
+	font-weight: normal;
+}
+.entry {
+	position: relative;
+	z-index: 1;
+	background: url(../images/entry_bg.gif) left top no-repeat;
+	width: 455px !important;
+	width /**/: 500px;
+	padding-left: 45px;
+	padding-top: 70px;
+}
+.entry-header {
+	font-size: 116%;
+	padding-bottom: 3px;
+	border-bottom: 3px double #74CE70;
+}
+.entry-body p {
+	margin: 1em 0;
+}
+.entry-body blockquote {
+	margin: 1em;
+	padding-left: 10px;
+	border-left: 3px double #74CE70;
+	color: #666666;
+}
+.entry-body p.entry-footer {
+	padding-top: 3px;
+	border-top: 1px solid #74CE70;
+	font-size: 90%;
+}
+
+/* サイドナビゲーション
+---------------------------------------------*/
+
+	/* 共通部分
+	---------------------------------------------*/
+	.module-header {
+		padding: 50px 30px 0 30px;
+		font-size: 90%;
+	}
+	.module-content {
+		padding: 5px 30px 20px 30px;
+		font-size: 90%;
+	}
+
+	/* 検索窓
+	---------------------------------------------*/
+	.module-search {
+		background: url(../images/search_top.gif) left top no-repeat;
+	}
+	.module-search .module-content {
+		background: url(../images/search__bottom.gif) left bottom no-repeat;
+	}
+	.module-search .module-content #search {
+		width: 110px;
+		border: 1px solid #E0E0E0;
+		background: #EAEAEA;
+	}
+	
+	/* カテゴリー／アーカイブリスト
+	---------------------------------------------*/
+	.module-categories,.module-archives {
+		background: url(../images/list_top.gif) left top no-repeat;
+	}
+	.module-categories .module-content,
+	.module-archives .module-content {
+		background: url(../images/list_bottom.gif) left bottom no-repeat;
+	}
+	.module-list {
+		border-top: 1px solid #74CE70;
+	}
+	.module-list li {
+		border-bottom: 1px solid #74CE70;
+	}
+	.module-list li a {
+		display: block;
+		padding: 4px 0 4px 12px;
+		background: #F9F9F9 url(../images/marker.gif) left center no-repeat;
+		color: #333333;
+		text-decoration: none;
+	}
+	.module-list li a:hover {
+		color: #009900;
+		background: #FFFFFF url(../images/marker.gif) left center no-repeat;
+	}
+
+/* カレンダー
+---------------------------------------------*/
+#calendar {
+	text-align: center;
+	margin-top: 40px;
+}
+#calendar table {
+	width: 95%;
+	margin: 0 auto;
+	font-size: 90%;
+}
+#calendar th,#calendar td {
+	padding: 3px;
+	text-align: center;
+}
+#calendar th {
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	background: #E0E0E0 url(../images/th_bg.gif) left bottom repeat-x;
+}
+#calendar td {
+	border-right: 1px solid #E0E0E0;
+	border-bottom: 1px solid #E0E0E0;
+	background: #FFFFFF url(../images/td_bg.gif) left bottom repeat-x
+}
+#calendar td a {
+	display: block;
+	width: 100%;
+	background-color: #009900;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#calendar td a:hover {
+	background-color: #74CE70;
+}
+	
+

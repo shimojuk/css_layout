@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* 商品一覧
+---------------------------------------------*/
+#productList {
+	margin-top: 45px;
+}
+#productList h2 {
+	border-top: 1px solid #CCCCCC;
+}
+#productList li {
+	float: left;
+	width: 181px;
+	margin: 10px 10px 0 0;
+	text-align: center;
+}
+#productList h3 span {
+	display: block;
+	padding: 3px 0;
+	color: #FFFFFF;
+	font-weight: normal;
+	background: #222222;
+}
+#productList dl {
+	margin: 1px 0;
+	font-size: 90%;
+	border-left: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+#productList dt {
+	padding: 2px 0;
+	text-align: center;
+	background: #E5DACA;
+	border-top: 1px solid #DABF9A;
+}
+#productList dd {
+	padding: 2px 0;
+}

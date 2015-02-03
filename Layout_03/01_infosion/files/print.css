@@ -1,0 +1,68 @@
+/* copyright (c) 2006 infosion, www.infosion.de */
+/* You may learn from this CSS and use its techniques in your own projects,
+but the unique combination of images, colors, sizes, typography, and
+positioning ("the design") is copyright (c) 1998-2006 infosion Ltd. & Co. KG
+and may not be used by anyone else.*/  
+
+
+
+
+/*
+-----------------------------------------------
+copyright (c) 2005 infosion, build #2.2
+Last updated 01 September 2005
+----------------------------------------------- */
+
+
+body {
+     margin:0;
+     padding:0;
+     background-color: #fff;
+     font-family: arial, sans-serif;
+     line-height:1.5em;
+     color:#000;
+     font-size: 14px;
+     }
+
+a:link, a:visited, a:hover, a:active {
+     color: #000;
+     text-decoration: none;
+     }
+
+
+p {
+     font-weight: normal;
+     margin: 4px 0;
+     font-size: 14px;
+     line-height: 23px;
+     text-align: justify;
+     }
+
+h1 {
+     font-size: 25px;
+     font-weight: normal;
+
+     margin: 0 0 14px 0;
+     line-height: 30px;
+     }
+
+h2 {
+     font-size: 18px;
+     font-weight: bold;
+     margin: 0;
+     }
+
+    
+h3 {
+     font-size: 14px;
+     font-weight: bold;
+     margin: 0;
+     }
+     
+img {
+     border: 0;
+     }
+
+#header, #top, #feature, #function, #graphics {
+     display: none;
+     }     

@@ -1,0 +1,13 @@
+/* copyright (c) 2006 infosion, www.infosion.de */
+/* You may learn from this CSS and use its techniques in your own projects,
+but the unique combination of images, colors, sizes, typography, and
+positioning ("the design") is copyright (c) 1998-2006 infosion Ltd. & Co. KG
+and may not be used by anyone else.*/  
+
+
+
+
+#nav {left: -6px;}
+#nav ul {width:158px;}
+#nav li {margin: 0 0px 7px 0;}
+#nav li a {height: 1%;}

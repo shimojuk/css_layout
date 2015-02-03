@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* 基本スタイル
+---------------------------------------------*/
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 75%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+	line-height: 1.4;
+	color: #333333;
+	background: #00A147 url(../images/body_bg.gif) left top repeat-y;
+}
+p {
+	/*\*/
+	letter-spacing: 0.2em;
+	/**/
+}
+
+/* ヘッダー
+---------------------------------------------*/
+#header {
+	position: relative;
+	width: 100%; /* Windows Internet Explorer 6対策 */
+	height: 101px;
+	background: #FFFFFF url(../images/header_bg.gif) left top no-repeat;
+}
+#logo {
+	position: absolute;
+	left: 19px;
+	top: 37px;
+	margin: 0;
+}
+
+	/* ナビゲーション
+	---------------------------------------------*/
+	#navigation {
+		position: absolute;
+		top: 37px;
+		left: 206px;
+		width: 536px;
+	}
+	#navigation ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	#navigation li {
+		float: left;
+		width: 107px;
+		margin: 0;
+	}
+	#navigation li a {
+		display: block;
+		width: 100%; /* Windows Internet Explorer 6対策 */
+		padding: 8px 0;
+		text-align: center;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+		color: #666666;
+		text-decoration: none;
+		background: url(../images/navigation_bg.gif) left top no-repeat;
+	}
+	#navigation li a:hover {
+		color: #EC8602;
+		background: url(../images/navigation_bg.gif) right top no-repeat;
+	}
+
+/* 2段組
+---------------------------------------------*/
+#content {
+	position: relative;
+	width: 761px;
+	margin-top: 26px;
+}
+#primary {
+	position: absolute;
+	width: 535px;
+	left: 206px;
+	top: 0;
+	background-color: #FFFFFF;
+}
+#secondary {
+	position: absolute;
+	width: 168px;
+	left: 19px;
+	top: 0;
+	background: #FFFFFF url(../images/secondary_bg.gif) right top repeat-y;
+}
+
+/* 本文
+---------------------------------------------*/
+#primary .section {
+	margin: 20px 0 26px 20px;
+}
+#primary h2 {
+	background: url(../images/h2_bg.gif) left top no-repeat;
+	margin: 0;
+	padding: 10px 0 15px 20px;
+	font-size: 100%;
+}
+#primary h3 {
+	font-size: 117%;
+	margin: 0;
+	padding-bottom: 3px;
+	border-bottom: 1px dotted #CCCCCC;
+}
+#primary p {
+	margin: 10px 0;
+}

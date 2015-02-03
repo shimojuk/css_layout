@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/* 基本スタイル
+---------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	list-style: none;
+}
+body {
+	font-size: 75%;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+	line-height: 1.4;
+	/*\*/
+	letter-spacing: 0.05em;
+	/**/
+	color: #333333;
+	background: #FFFFFF url(../images/body_bg.gif) left top repeat-y;
+}
+img {
+	border: none;
+	vertical-align: top;
+}
+
+/* 固定幅の2段組レイアウト
+---------------------------------------------*/
+#content {
+	width: auto;
+	margin-left: 220px;
+	padding-top: 40px;
+	border-top: 10px solid #DABF9A;
+}
+#logo {
+	position: absolute;
+	left: 19px;
+	top: 50px;
+	width: 139px;
+}
+#globalNav {
+	position: absolute;
+	left: 0;
+	top: 113px;
+	width: 175px;
+	padding-bottom: 327px;
+	border-top: 1px solid #5F5F5F;
+	background: url(../images/leftside_bg.gif) left bottom no-repeat;
+}
+#globalNav li {
+	border-bottom: 1px solid #5F5F5F;
+}
+#viewCart {
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	width: 102px;
+}
+
+/* 大見出し
+---------------------------------------------*/
+h1 {
+	margin-bottom: 20px;
+}
+
+/* フッター
+---------------------------------------------*/
+#footer {
+	clear: both;
+	position: relative;
+	width: auto;
+	margin-left: 220px;
+	padding: 40px 0 30px 0;
+}
+#footer p {
+	position: absolute;
+	left: 0;
+	top: 45px;
+}
+#footerNav01 {
+	position: absolute;
+	right: 146px;
+	top: 45px;
+	width: 101px;
+}
+#footerNav02 {
+	position: absolute;
+	right: 78px;
+	top: 45px;
+	width: 58px;
+}
+#footerNav03 {
+	position: absolute;
+	right: 20px;
+	top: 45px;
+	width: 48px;
+}

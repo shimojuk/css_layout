@@ -1,0 +1,84 @@
+/****************************************************************
+*   INTERNET EXPLORER HACKS CSS file for http://web.burza.hr/   *
+*   Copyright (c) Burza d.o.o. http://web.burza.hr/             *
+****************************************************************/
+/* This is not for IE/Mac \*/
+
+#mainContent { background: url(flash_replacements/01_02_en.gif) no-repeat 0 -170px; }
+#mainNav ol { background: url(flash_replacements/01_02_en.gif) no-repeat 0 0; }
+
+#newsBody .innerBox .yHolder,
+#contactBody .innerBox .yHolder,
+#whoBody .innerBox .yHolder,
+#whatBody .innerBox .yHolder,
+#errorBody .innerBox .yHolder,
+#corewebBody .innerBox .yHolder,
+#goodiesBody .innerBox .yHolder { width: 100%; }
+
+#goodiesBody .yHolder { height: 600px; }
+
+.innerBox .yHolder { padding: 30px; height: 380px; }
+#whoBody .innerBox .yHolder { height: 490px; }
+
+#newsBody .innerBox .yHolder,
+#contactBody .innerBox .yHolder,
+#whoBody .innerBox .yHolder { width: 344px; }
+
+#whatBody .innerBox .yHolder,
+#errorBody .innerBox .yHolder,
+#corewebBody .innerBox .yHolder { width: 514px; }
+#goodiesBody .innerBox .yHolder { width: 858px; }
+
+#corewebBody #leftCol h3,
+#whoBody #rightCol h3,
+#newsBody #middleCol h3,
+#newsBody #rightCol h3,
+#portfolioBody #leftCol h3,
+#errorBody #leftCol h2,
+#innerBox h1 { display: none; }
+
+#whatBody .yHolder p,
+#errorBody .yHolder p,
+#corewebBody .yHolder p { width: 454px; }
+
+/* SHLJASHTECHI */
+#errorBody .yHolder { height: 432px; }
+
+#whatBody .yHolder p.first-child, #errorBody .yHolder p.first-child { width: 497px; height: 122px; }
+#errorBody .yHolder p.first-child { height: 30px; }
+
+#whoBody .yHolder p.first-child,
+#whoBody .yHolder .whoName,
+#contactBody .yHolder p.first-child,
+#newsBody .yHolder div.first-child { width: 326px; }
+
+#goodiesBody .yHolder p.first-child { padding: 162px 320px 0 21px;
+    margin-top: -22px; margin-left: -21px; width: 841px;
+    background: url(goodies/iconHeader_en.jpg) no-repeat 0 0; }
+
+.sideBox dl { width: 170px; }
+
+#theContent ul.list { float: left; display: inline; width: 170px; }
+
+#theContent ul.list li, #whatBody #rightCol #awardsBox li { display: inline; }
+
+#theContent ul.list li a, .featuresSwitch a { width: 156px !important; }
+
+#projectDetails li strong { width: 63px; }
+
+#newsBody #projectDetails li a, #newsBody #projectDetails li span { width: 263px; }
+
+#portfolioBody #projectDetails li a, #portfolioBody #projectDetails li span { width: 435px; }
+
+#whatBody #rightCol #awardsBox li span { 328px; }
+
+#contactfrm input, #contactfrm textarea { width: 198px; }
+
+#contactfrm input { height: 19px; }
+
+#contactfrm #message { height: 88px }
+
+#footer { width: 858px; }
+
+
+/* */

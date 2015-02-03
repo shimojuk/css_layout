@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* 不要なエリア
+---------------------------------------------*/
+#globalNav,
+#print,
+#secondary,
+#advertisement {
+	display: none;
+}
+
+/* レイアウト
+---------------------------------------------*/
+body {
+	font-size: 10pt;
+	font-family: sans-serif;
+	line-height: 1.5;
+	color: #000000;
+}
+a {
+	color: #000000;
+}
+#primary h1 {
+	margin-top: 2em;
+	font-size: 180%;
+	text-align: center;
+	border-top: 1px dashed #000000;
+	border-bottom: 1px dashed #000000;
+}
+#primary .date {
+	text-align: right;
+}
+.list h2 {
+	margin-top: 2em;
+	font-size: 120%;
+	text-align: center;
+	border-top: 1px dashed #000000;
+	border-bottom: 1px dashed #000000;
+}
+#footer {
+	border-top: 1px solid #000000;
+	text-align: center;
+}

@@ -1,0 +1,340 @@
+/**
+ * SVN $Id: index.php 13 2005-05-30 15:01:34Z psiska $
+ *
+ * Designchuchi - an online portfolio of four young web addicts.
+ * Copyright (C) 2005 by Designchuchi
+ *
+ * Global css file for screen media and more sophisticated browsers.
+ */
+
+/*******************************************************************************
+* GLOBAL
+*******************************************************************************/
+* { margin:0; padding:0; }
+
+body, html { background: url(background_page.gif) repeat; height:100%; }
+body { font-size:70%; }
+
+img { border:none; }
+
+h1, h2, h3, h4 { font-weight:bold; position:relative; background-color:transparent; }
+h2 { font-size:medium; margin-bottom:5px; }
+p { margin-bottom:20px; background:transparent; }
+
+.clear {
+    width:100%;
+    font-size:1px;
+    line-height:1px;
+    height:1px;
+    clear:both;
+}
+.error { cursor:help; }
+
+/*******************************************************************************
+* LINKS
+*******************************************************************************/
+a { color: #669999; text-decoration:underline; }
+a:hover { color:black; }
+
+a.ext { background: url(ext-link_off.gif) no-repeat 0 4px; padding-left:14px; }
+a.ext:hover { background-image: url(ext-link_on.gif); }
+
+/*******************************************************************************
+* SKELLETON CONTAINER
+*******************************************************************************/
+div#skelletoncontainer {
+    position:absolute;
+    background: url(skelleton.gif) no-repeat;
+    left:60px;
+    top:0;
+    width:829px;
+    height:859px;
+}
+
+/*******************************************************************************
+* MENU
+*******************************************************************************/
+ul#menu {
+    list-style-type:none;
+    line-height:0px;
+    font-size:0;
+    position:absolute;
+    top:187px;
+    left:107px;
+}
+ul#menu li { text-indent: -10000px; }
+ul#menu li a { display: block; text-decoration:none; position:relative; }
+
+a#menu-home { background: url(nav_home.gif) no-repeat; height:25px; width:48px; }
+a#menu-profile { background: url(nav_profile.gif) no-repeat; height:31px; width:54px; margin:-1px 0 0 9px; }
+a#menu-services { background: url(nav_services.gif) no-repeat; height:31px; width:62px; margin:-3px 0 0 18px; }
+a#menu-portfolio { background: url(nav_portfolio.gif) no-repeat; height:34px; width:66px; margin:-8px 0 0 28px; }
+a#menu-contact { background: url(nav_contact.gif) no-repeat; height:32px; width:58px; margin:-3px 0 0 38px; }
+a#menu-shop { background: url(nav_shop.png) no-repeat; height:22px; width:73px; top:407px; left:-5px; }
+
+a#menu-home:hover, a#menu-home.active { background-position:0 -25px; }
+a#menu-profile:hover, a#menu-profile.active { background-position:0 -31px; }
+a#menu-services:hover, a#menu-services.active { background-position:0 -30px; }
+a#menu-portfolio:hover, a#menu-portfolio.active { background-position:0 -34px; }
+a#menu-contact:hover, a#menu-contact.active { background-position:0 -32px; }
+
+/*******************************************************************************
+* CHUCHI LOGO & FRUITS
+*******************************************************************************/
+div#chuchilogo {
+    position:absolute;
+    top:86px;
+    left:246px;
+    width:195px;
+    height:64px;
+    background: url(chuchi.png) no-repeat 0 0;
+}
+
+div#fruit {
+    position:absolute;
+    top:154px;
+    left:640px;
+    width:110px;
+    height:94px;
+}
+div.fr1 { background: url(fruits/apple.gif) no-repeat; }
+div.fr2 { background: url(fruits/avocado.gif) no-repeat; }
+div.fr3 { background: url(fruits/pepper.gif) no-repeat; }
+div.fr4 { background: url(fruits/strawberry.gif) no-repeat; }
+div.fr5 { background: url(fruits/tomato.gif) no-repeat; }
+
+/*******************************************************************************
+* HEADING
+*******************************************************************************/
+div#heading { position:absolute; top:210px; left:290px; }
+
+div#heading h1 { height:50px; width:270px; }
+div#heading h1 b { display:none; }
+
+div#heading h1.designchuchi { background: url(title_designchuchi.gif) no-repeat; }
+div#heading h1.profile { background: url(title_profile.gif) no-repeat; }
+div#heading h1.portfolio { background: url(title_portfolio.gif) no-repeat; }
+div#heading h1.services { background: url(title_services.gif) no-repeat; }
+div#heading h1.contact { background: url(title_contact.gif) no-repeat; }
+div#heading h1.projectDetails { background: url(title_projectdetails.gif) no-repeat; }
+
+h1.latest b { display:none; }
+h1.latest { width:160px; height:40px; background: url(title_latest.gif) no-repeat; margin-bottom:20px; }
+
+/*******************************************************************************
+* CONTENT
+*******************************************************************************/
+div#contentwrapper {
+    position:absolute;
+    top:289px;
+    left:253px;
+    width:507px;
+    z-index:10;
+}
+div#content { background: url(background_content.png) repeat-y; padding:0 34px 10px 34px; }
+div#content-ie { background: url(background_content.gif) repeat-y 2px 0; padding:0 34px 10px 34px; }
+
+img#welcomeimage {
+    position:relative;
+    top:-20px;
+    left:-28px;
+    margin-bottom:10px;
+}
+
+/*******************************************************************************
+* FOOTER
+*******************************************************************************/
+div#footer, div#footer-ie { height:52px; }
+div#footer { background: url(background_footer.png) no-repeat; }
+div#footer-ie { background: url(background_footer.gif) no-repeat 2px 0; }
+
+/*******************************************************************************
+* W3C
+*******************************************************************************/
+ul#w3c {
+    position:absolute;
+    top:793px;
+    left:345px;
+    list-style-type:none;
+    line-height:0px;
+    font-size:0;
+}
+ul#w3c li { text-indent:-10000px; }
+ul#w3c li a {
+    display:block;
+    width:64px;
+    height:41px;
+    position:relative;
+    text-decoration:none;
+}
+ul#w3c li a.xhtml { background: url(w3c_xhtml.png) no-repeat; }
+ul#w3c li a.css { background: url(w3c_css.png) no-repeat; top:-70px; left:84px; }
+
+/*******************************************************************************
+* PORTFOLIO
+*******************************************************************************/
+h2#projectName { color:#699; margin-bottom:5px; }
+div.cooked { position:relative; top:-8px; color:#699; margin-bottom:15px; }
+p.portfolio-description {
+    margin:20px 0 20px 0;
+    position:relative;
+}
+div#portfolio-screenshot {
+    background: url(background_screenshot.gif) no-repeat 0 0;
+    width:328px;
+    height:198px;
+    padding:6px 6px 4px 6px;
+}
+
+/* screenshots and portfolio navigation */
+ul#screenshots { list-style-type:none; margin:5px 0px 0px 0px; }
+ul#portfolio-nav { list-style-type:none; position:relative; }
+
+/* screenshots and portfolio navigation elements */
+ul#screenshots li strong { display:none; }
+ul#screenshots li, ul#portfolio-nav li {
+    float:left;
+    margin-right:5px;
+    text-indent:-10000px;
+}
+ul#screenshots li a, ul#portfolio-nav li a {
+    display:block;
+    height:15px;
+    width:16px;
+    line-height:15px;
+    text-decoration:none;
+    background-repeat:no-repeat;
+}
+ul#screenshots li.s00 {
+    margin-right:10px;
+    width:92px;
+    height:16px;
+    background: url(portfolio/screenshots_s00.gif) no-repeat;
+}
+ul#screenshots li.s01 a { background:url(portfolio/screenshots_s01.gif); }
+ul#screenshots li.s02 a { background:url(portfolio/screenshots_s02.gif); }
+ul#screenshots li.s03 a { background:url(portfolio/screenshots_s03.gif); }
+ul#screenshots li.s04 a { background:url(portfolio/screenshots_s04.gif); }
+ul#screenshots li.s05 a { background:url(portfolio/screenshots_s05.gif); }
+
+ul#screenshots li a:hover, ul#screenshots li a.active { background-position:0 -15px; }
+
+ul#portfolio-nav li.prev a { background: url(btn-previous.gif) no-repeat; width:78px; }
+ul#portfolio-nav li.next a { background: url(btn-next.gif) no-repeat; width:52px; }
+ul#portfolio-nav li.up a { background: url(btn-up.gif) no-repeat; width:41px; }
+ul#portfolio-nav li a:hover { background-position:0 -15px; }
+
+/*******************************************************************************
+* PORTFOLIO-MINIATURES
+*******************************************************************************/
+div.miniatures { margin-bottom:20px; }
+div.miniatures a img {
+    background:url(background_thumbnail.png) no-repeat;
+    padding:3px 3px 10px 3px;
+    margin-right:4px;
+}
+
+/*******************************************************************************
+* STARTPAGE
+*******************************************************************************/
+#welcome { margin:0px 10px 10px 0px; }
+#latest-pic {
+    position:relative;
+    background:url(background_latest.gif) no-repeat;
+    width:207px;
+    height:218px;
+    float:right;
+}
+#latest-description { float:left;width:230px;position:relative; }
+#latest-pic img { margin:12px 0 20px 37px; }
+
+/*******************************************************************************
+* NEWS
+*******************************************************************************/
+#newswrapper { position:absolute; top:-200px; left:520px; }
+#newswrapper h1 b { display:none; }
+#newswrapper h1 { width:189px; height:96px; background:url(news_header.gif) no-repeat; }
+
+#newscontent {
+    width:189px;
+    background:url(background_newscontent.gif) repeat-y;
+    padding:5px 0 20px 15px;
+}
+#newscontent .newspost h3 { font-size:small; background:transparent; }
+#newscontent .newspost p { margin:0px; color:white; background-color:transparent; }
+
+#newscontent .newspost a { color:white; background-color:transparent; }
+#newscontent .newspost a:hover { color:black; background:transparent; }
+#newscontent .newspost a.ext { background: url(ext-link-news_off.gif) no-repeat 0 4px; padding-left:14px; }
+#newscontent .newspost a.ext:hover { background: url(ext-link_on.gif) no-repeat 0 4px; }
+
+#newscontent .newspost {
+    width:118px;
+    margin-top:15px;
+    padding:6px;
+    background:url(background_newspost.gif);
+}
+#newscontent .newspost:hover { background:url(background_newspost_hover.gif); }
+#newsfooter {
+    height:29px;
+    width:189px;
+    background:url(news_footer.gif) no-repeat;
+}
+
+/*******************************************************************************
+* ANNOUNCES
+*******************************************************************************/
+#announce-wrapper, #announce-wrapper .header { width:150px; }
+#announce-wrapper .header { height:35px; background:url(announce_header.gif) no-repeat 0 0; }
+#announce-wrapper .content { background:url(background_announce_content.gif); padding:6px 12px 12px 12px; position:relative; }
+
+#announce-wrapper .post { background:url(background_newspost.gif); padding:6px; }
+#announce-wrapper .post:hover { background:url(background_newspost_hover.gif); }
+#announce-wrapper .post p { color:white; margin:0px; }
+#announce-wrapper .post a { color:white; }
+#announce-wrapper .post a:hover, #announce-wrapper .post span.mailCloak { color:black; }
+#announce-wrapper .post h3 { font-size:small; background-color:transparent; }
+
+/*******************************************************************************
+* CONTACT PAGE
+*******************************************************************************/
+#contactForm { display:block; float:left; width:225px; }
+#contactForm p { margin-bottom:10px; }
+#contactForm input, #contactForm textarea { font-size:11px; font-family: 'Trebuchet MS', Verdana, sans-serif; }
+#contactForm textarea.input,
+#contactForm textarea.error,
+#contactForm input.input,
+#contactForm input.error {
+    padding:2px;
+    border:1px solid #ddd;
+    width:240px;
+}
+#contactForm textarea.error,
+#contactForm input.error { border:1px solid black; }
+#contactForm textarea.input:hover,
+#contactForm textarea.input:focus,
+#contactForm input.input:hover,
+#contactForm input.input:focus { border:1px solid #aaa; }
+
+#contactForm p.label-name,
+#contactForm p.label-email,
+#contactForm p.label-subject,
+#contactForm p.label-message {
+    text-indent: -10000px;
+    height: 13px;
+    line-height: 13px;
+    margin:0;
+}
+#contactForm p.label-name { background: url(label-name.gif) no-repeat; }
+#contactForm p.label-email { background: url(label-email.gif) no-repeat; }
+#contactForm p.label-subject { background: url(label-subject.gif) no-repeat; }
+#contactForm p.label-message { background: url(label-message.gif) no-repeat; }
+
+form input.submit {
+    width:52px;
+    height:15px;
+    background:url(btn-send.gif) no-repeat left top;
+    display:block;
+    text-indent:-1000px;
+}
+form input.submit:hover { background-position:0 -15px; }

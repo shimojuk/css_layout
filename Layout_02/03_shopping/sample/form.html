@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" href="css/base.css" type="text/css" media="all" />
+<link rel="stylesheet" href="css/form.css" type="text/css" media="all" />
+<title>Cacao Sample Chocolate Shop</title>
+</head>
+<body>
+<div id="logo"><img src="images/logo.gif" alt="Cacao Sample Chocolate Shop" width="139" height="41" /></div>
+<div id="content">
+	<h1><img src="images/title_form.gif" alt="お客様情報の入力" width="195" height="25" /></h1>
+	<p>当サイトにてショッピングをされるにあたっては、ご利用規約、及びプライバシーポリシーに同意していただく必要がございます。<br />
+		必ずお読みいただき、以下のお客様情報をご入力の上、送信ボタンをクリックしてください。</p>
+	<form action="/inquiry.cgi" method="post" id="orderForm">
+		<fieldset>
+		<legend>お名前</legend>
+			<dl>
+				<dt><label for="name">お名前（漢字）<em>（必須）</em></label></dt>
+				<dd>
+					<input type="text" name="name" size="30" id="name" class="text1" />
+				</dd>
+				<dt><label for="ruby">お名前（フリガナ）<em>（必須）</em></label></dt>
+				<dd>
+					<input type="text" name="ruby" size="30" id="ruby" class="text1" />
+					<span class="assist">（全角カタカナ）</span>
+				</dd>
+			</dl>
+		</fieldset>
+		<fieldset>
+			<legend>住所</legend>
+			<dl>
+				<dt><label for="postcode1">郵便番号<em>（必須）</em></label></dt>
+				<dd>
+					<input type="text" name="postcode1" size="3" maxlength="3" id="postcode1" class="text2" />
+					-
+					<input type="text" name="postcode2" size="4" maxlength="4" id="postcode2" class="text2" />
+					<span class="assist">（半角数字）</span>
+				</dd>
+				<dt><label for="prefecture">都道府県<em>（必須）</em></label></dt>
+				<dd>
+					<select name="prefecture" id="prefecture">
+					<option value="" selected="selected">選択してください</option>
+					<optgroup label="北海道・東北地方">
+					<option value="北海道">北海道</option>
+			
+					<option value="青森県">青森県</option>
+					<option value="岩手県">岩手県</option>
+					<option value="宮城県">宮城県</option>
+					<option value="秋田県">秋田県</option>
+					<option value="山形県">山形県</option>
+					<option value="福島県">福島県</option>
+			
+					</optgroup>
+					<optgroup label="関東地方">
+					<option value="茨城県">茨城県</option>
+					<option value="栃木県">栃木県</option>
+					<option value="群馬県">群馬県</option>
+					<option value="埼玉県">埼玉県</option>
+					<option value="千葉県">千葉県</option>
+			
+					<option value="東京都">東京都</option>
+					<option value="神奈川県">神奈川県</option>
+					</optgroup>
+					<optgroup label="中部地方">
+					<option value="新潟県">新潟県</option>
+					<option value="富山県">富山県</option>
+					<option value="石川県">石川県</option>
+			
+					<option value="福井県">福井県</option>
+					<option value="山梨県">山梨県</option>
+					<option value="長野県">長野県</option>
+					<option value="岐阜県">岐阜県</option>
+					<option value="静岡県">静岡県</option>
+					<option value="愛知県">愛知県</option>
+			
+					</optgroup>
+					<optgroup label="近畿地方">
+					<option value="三重県">三重県</option>
+					<option value="滋賀県">滋賀県</option>
+					<option value="京都府">京都府</option>
+					<option value="大阪府">大阪府</option>
+					<option value="兵庫県">兵庫県</option>
+			
+					<option value="奈良県">奈良県</option>
+					<option value="和歌山県">和歌山県</option>
+					</optgroup>
+					<optgroup label="中国地方">
+					<option value="鳥取県">鳥取県</option>
+					<option value="島根県">島根県</option>
+					<option value="岡山県">岡山県</option>
+			
+					<option value="広島県">広島県</option>
+					<option value="山口県">山口県</option>
+					</optgroup>
+					<optgroup label="四国地方">
+					<option value="徳島県">徳島県</option>
+					<option value="香川県">香川県</option>
+					<option value="愛媛県">愛媛県</option>
+			
+					<option value="高知県">高知県</option>
+					</optgroup>
+					<optgroup label="九州地方">
+					<option value="福岡県">福岡県</option>
+					<option value="佐賀県">佐賀県</option>
+					<option value="長崎県">長崎県</option>
+					<option value="熊本県">熊本県</option>
+			
+					<option value="大分県">大分県</option>
+					<option value="宮崎県">宮崎県</option>
+					<option value="鹿児島県">鹿児島県</option>
+					<option value="沖縄県">沖縄県</option>
+					</optgroup>
+					<option value="日本国外">日本国外</option>
+			
+					</select>
+				</dd>
+				<dt><label for="address1">市区町村・番地<em>（必須）</em></label></dt>
+				<dd>
+					<input type="text" name="address1" size="30" id="address1" class="text3" />
+					<span class="assist">（例：東京都東京都目黒区上目黒 12345）</span>
+				</dd>
+				<dt><label for="address2">アパート・マンション名</label></dt>
+				<dd>
+					<input type="text" name="address2" size="30" id="address2" class="text3" />
+					<span class="assist">（例：チョコレートハイツ 101号）</span>
+				</dd>
+			</dl>
+		</fieldset>
+		<fieldset>
+			<legend>連絡先</legend>
+			<dl>
+				<dt><label for="email">E-Mailアドレス<em>（必須）</em></label></dt>
+				<dd>
+					<input type="text" name="email" size="30" id="email" class="text3" />
+					<span class="assist">（半角英数字　例；example@example.com）</span>
+				</dd>
+				<dt><label for="tel">電話番号<em>（必須）</em></label></dt>
+				<dd>
+					<input type="text" name="tel" size="30" id="tel" class="text3" />
+					<span class="assist">（半角数字　例：12-3456-7890）</span>
+				</dd>
+			</dl>
+		</fieldset>
+		<div class="submit"><input type="image" src="images/submit_button.gif" alt="送信" /></div>
+	</form>
+</div>
+<div id="globalNav">
+	<ul>
+		<li><a href="#"><img src="images/global_nav_01.gif" alt="トップページ" width="175" height="26" /></a></li>
+		<li><a href="#"><img src="images/global_nav_02.gif" alt="ショッピングガイド" width="175" height="26" /></a></li>
+		<li><a href="#"><img src="images/global_nav_03.gif" alt="ショップからのお知らせ" width="175" height="26" /></a></li>
+		<li><a href="#"><img src="images/global_nav_04.gif" alt="サイトマップ" width="175" height="26" /></a></li>
+	</ul>
+</div>
+<div id="footer">
+	<ul>
+		<li id="footerNav01"><a href="#"><img src="images/footer_nav_01.gif" alt="プライバシーポリシー" width="101" height="11" /></a></li>
+		<li id="footerNav02"><a href="#"><img src="images/footer_nav_02.gif" alt="ご利用規約" width="58" height="11" /></a></li>
+		<li id="footerNav03"><a href="#"><img src="images/footer_nav_03.gif" alt="法定表記" width="48" height="11" /></a></li>
+	</ul>
+	<p><img src="images/copyright.gif" alt="&copy; Cacao Sample Chocolate Shop All Rights Reserved." width="232" height="11" /></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+/**
+ * SVN $Id: print.css 191 2005-09-26 20:56:29Z psiska $
+ *
+ * Designchuchi - an online portfolio of four young web addicts.
+ * Copyright (C) 2005 by Designchuchi
+ *
+ * CSS file for print media.
+ */
+
+/*******************************************************************************
+* GLOBAL
+*******************************************************************************/
+body, html { background:white; color:black }
+body, #content {
+  float: none !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size:11pt;
+}
+h2, h3 { color:#699; }
+img { border:none; }
+div.cooked { position:relative; top:-8px; color:#699; margin-bottom:15px; }
+#content { margin:0 10%; padding:0 10%; }
+
+/*******************************************************************************
+* LINKS
+*******************************************************************************/
+a { color: #669999; text-decoration:underline; }
+a[href]:after { content: " (" attr(href) ") "; }
+#content .miniatures a[href]:after, #latest-pic a[href]:after { display:none; }
+
+/*******************************************************************************
+* PICTURES AND MENUS
+*******************************************************************************/
+#skelletoncontainer, #menu, #chuchilogo, #fruit, #footer, #footer-ie { display:none !important; }
+#w3c, #screenshots, #portfolio-nav { display:none !important; }
+
+/*******************************************************************************
+* CONTACT PAGE
+*******************************************************************************/
+#contactForm { display:block; float:left; width:100%; }
+#contactForm p { margin-bottom:0; }
+#contactForm textarea.input,
+#contactForm textarea.error,
+#contactForm input.input,
+#contactForm input.error {
+    padding:2px;
+    border:1px solid #ddd;
+    width:50%;
+    font-size:100%;
+}
+#contactForm textarea.error,
+#contactForm input.error { border:1px solid black; }
+
+#contactForm p.label-name,
+#contactForm p.label-email,
+#contactForm p.label-subject,
+#contactForm p.label-message { background-color:white; color: #699; font-weight:bold; }
+
+/*******************************************************************************
+* SIFR
+*******************************************************************************/
+.sIFR-flash, .sIFR-flash object, .sIFR-flash embed {
+    display: none !important;
+    height: 0;
+    width: 0;
+    position: absolute;
+    overflow: hidden;
+}
+
+span.sIFR-alternate {
+    visibility: visible !important;
+    display: block !important;
+    position: static !important;
+    left: auto !important;
+    top: auto !important;
+}

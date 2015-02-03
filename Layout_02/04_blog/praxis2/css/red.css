@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+body {
+	background: #FFFFFF url(../images/body_bg_red.gif) left top repeat-x;
+}
+a {
+	color: #CC3333;
+}
+#container {
+	background: url(../images/container_bg_red.gif) left top no-repeat;
+}
+#banner-header a {
+	background: url(../images/logo_red.gif) left top no-repeat;
+}
+.date-header {
+	color: #CC3333;
+}
+.entry-header {
+	border-bottom: 3px double #E24545;
+}
+.entry-body blockquote {
+	border-left: 3px double #E24545;
+}
+.entry-body p.entry-footer {
+	border-top: 1px solid #E24545;
+}
+.module-list {
+	border-top: 1px solid #E24545;
+}
+.module-list li {
+	border-bottom: 1px solid #E24545;
+}
+.module-list li a {
+	background: #F9F9F9 url(../images/marker_red.gif) left center no-repeat;
+}
+.module-list li a:hover {
+	color: #CC3333;
+	background: #FFFFFF url(../images/marker_red.gif) left center no-repeat;
+}
+#calendar td a {
+	background-color: #CC3333;
+}
+#calendar td a:hover {
+	background-color: #E24545;
+}

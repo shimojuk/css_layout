@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>フィルターで透明度を指定したPNGを表示する</title>
+<style type="text/css">
+body { margin: 50px; text-align: center; }
+#image1,#image2 {
+	width: 80px;
+	height: 150px;
+}
+#image1 {
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/image1.png',sizingMethod=scale);
+}
+#image2 {
+	position: relative;
+	top: -154px;
+	left: 0;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/image2.png',sizingMethod=scale);
+}
+</style>
+</head>
+
+<body>
+<div id="image1"></div>
+<div id="image2"></div>
+</body>
+</html>
