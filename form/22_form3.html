@@ -1,33 +1,103 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <title>ラベルとコントロールを関連付ける</title>
 <style type="text/css">
-body {
-	font-size: 75%;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
-	line-height: 1.5;
-	color: #333333;
-	background-color: #FFFFFF;
-}
+    body {
+        font-size: 75%;
+        font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ","ＭＳ Ｐゴシック", sans-serif;
+        line-height: 1.5;
+        color: #333333;
+        background-color: #FFFFFF;
+    }
+    #inquiry{
+        width: 600px;
+    }
+
+    #inquiry table{
+        border-top: 1px solid #cccccc;
+        border-bottom:none;
+        border-left:none;
+        border-right:none;
+        width:100%;
+    }
+
+    #inquiry td{
+        border-bottom: 1px solid #cccccc;
+        padding:10px;
+    }
+
+    #inquiry th{
+        border-bottom: 1px solid #cccccc;
+        border-left: 6px solid #cccccc;
+        
+        padding:10px;
+        background-color:#F3F3F3;
+        font-weight:normal;
+        width:200px;
+    }
+    #inquiry th.must{
+        border-left-color:#D90000;
+    }
+
+    #inquiry th em{
+        font-style:normal;
+        color:#FF0000;
+        padding-left:5px;
+    }
+    #inquiry .text1, .text2, .text3, .text4 {
+        border:1px solid #CCCCCC;
+        background-color:#F3F3F3;
+        padding:2px;
+    }
+    
+    #inquiry .text1:focus, .text2:focus, .text3:focus, .text4:focus {
+        border-color:#7F9DB9;
+        background-color:#FFFFFF;
+
+        
+    }
+    .text1{
+        width:100%;
+    }
+    .text2{
+        width:4em;
+    }
+    .text3{
+        width:98%;
+    }
+    .text4{
+        width:98%;
+    }
+
+    #inquiry select{
+        border:1px solid #CCCCCC;
+        background-color:#F3F3F3;
+    }
+
+    #inquiry .submit{
+        text-align:center;
+        margin-top:30px;
+
+    }
 </style>
 </head>
 
 <body>
 <form action="/inquiry.cgi" method="post" id="inquiry">
-<table border="border" summary="お問い合わせに関する入力項目名とその入力欄">
+<table border="0" summary="お問い合わせに関する入力項目名とその入力欄">
 <tr>
-	<th scope="row"><label for="name">お名前<em>（必須）</em></label></th>
-	<td><input type="text" name="name" size="30" id="name" /></td>
+	<th scope="row" class="must"><label for="name">お名前<em>（必須）</em></label></th>
+	<td><input type="text" name="name" size="30" id="name" class="text1" onfocus="focusColor(this)" onblur="blurColor(this)"/></td>
 </tr>
 <tr>
 	<th scope="row"><label for="postcode1">郵便番号</label></th>
 	<td>
-		<input type="text" name="postcode1" size="3" maxlength="3" id="postcode1" />
+		<input type="text" name="postcode1" size="3" maxlength="3" id="postcode1" class="text2"/>
 		-
-		<input type="text" name="postcode2" size="4" maxlength="4" id="postcode2" />
+        <input type="text" name="postcode2" size="4" maxlength="4" id="postcode2" class="text2" />
 	</td>
 </tr>
 <tr>
@@ -102,18 +172,18 @@ body {
 </tr>
 <tr>
 	<th scope="row"><label for="address1">市区町村・番地</label></th>
-	<td><input type="text" name="address1" size="30" id="address1" /></td>
+	<td><input type="text" name="address1" size="30" id="address1" class="text3" /></td>
 </tr>
 <tr>
 	<th scope="row"><label for="address2">アパート・マンション名</label></th>
-	<td><input type="text" name="address2" size="30" id="address2" /></td>
+	<td><input type="text" name="address2" size="30" id="address2" class="text3" /></td>
 </tr>
 <tr>
-	<th scope="row"><label for="email">E-Mailアドレス<em>（必須）</em></label></th>
-	<td><input type="text" name="email" size="30" id="email" /></td>
+    <th scope="row" class="must"><label for="email">E-Mailアドレス<em>（必須）</em></label></th>
+	<td><input type="text" name="email" size="30" id="email" class="text3" /></td>
 </tr>
 <tr>
-	<th scope="row">お問い合わせの種類<em>（必須）</em></th>
+    <th scope="row" class="must">お問い合わせの種類<em>（必須）</em></th>
 	<td>
 		<input name="category" type="radio" value="このサイトについてのお問い合わせ" id="category1" />
 		<label for="category1">このサイトについてのお問い合わせ</label><br />
@@ -124,11 +194,21 @@ body {
 	</td>
 </tr>
 <tr>
-	<th scope="row"><label for="content">お問い合わせ内容<em>（必須）</em></label></th>
-	<td><textarea name="content" cols="30" rows="15" id="content"></textarea></td>
+    <th scope="row" class="must"><label for="content">お問い合わせ内容<em>（必須）</em></label></th>
+	<td><textarea name="content" cols="30" rows="15" id="content" class="text4"></textarea></td>
 </tr>
 </table>
-<div><input type="submit" value="確認画面へ" /></div>
+<div class="submit"><input type="submit" value="確認画面へ" /></div>
 </form>
+    <script type="text/javascript">
+        function focusColor(i) {
+            i.style.borderColor = '#7F9DB9';
+            i.style.backgroundColor = '#FFFFFF';
+        }
+        function blurColor(i) {
+            i.style.borderColor = '#CCCCCC';
+            i.style.backgroundColor = '#F3F3F3';
+        }
+    </script>
 </body>
 </html>
