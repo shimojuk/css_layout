@@ -9,7 +9,7 @@
 }
 body {
 	font-size: 75%;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "ＭＳ Ｐゴシック", sans-serif;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ","ＭＳ Ｐゴシック", sans-serif;
 	line-height: 1.4;
 	color: #333333;
 	background: #F4F4F4 url(../images/body_bg.gif) left top repeat-x;
@@ -37,9 +37,24 @@ img {
 ---------------------------------------------*/
 #logo {
 	position: absolute;
-	left: 17px;
-	top: 18px;
+	/*left: 17px;*/
+	top: 0;
 }
+#logo img{
+   width: auto;
+   max-height: 73px;
+}
+#banner-1{
+    position: absolute;
+	/*left: 17px;*/
+	top: 0;
+    left:0;
+}
+#banner-1 img{
+   width: auto;
+   max-height: 73px;
+}
+
 #globalNav {
     position:absolute;
     top:73px;
