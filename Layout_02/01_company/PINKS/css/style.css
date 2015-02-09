@@ -36,12 +36,25 @@ img {
 /* ロゴとナビゲーション
 ---------------------------------------------*/
 #logo {
-    width:80%;
-    height:80%;
 	position: absolute;
 	/*left: 17px;*/
-	top: 18px;
+	top: 0;
 }
+#logo img{
+   width: auto;
+   max-height: 73px;
+}
+#banner-1{
+    position: absolute;
+	/*left: 17px;*/
+	top: 0;
+    left:0;
+}
+#banner-1 img{
+   width: auto;
+   max-height: 73px;
+}
+
 #globalNav {
     position:absolute;
     top:73px;
